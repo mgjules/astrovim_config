@@ -19,4 +19,20 @@ return {
       }
     end,
   },
+  {
+    "iamcco/markdown-preview.nvim",
+    event = "VeryLazy",
+    setup = function()
+      vim.fn(function() vim.fn["mkdp#util#install"]() end, 0)
+    end,
+  },
+  {
+    "nvim-tree/nvim-web-devicons",
+  },
+  {
+    "nvim-treesitter/nvim-treesitter-context",
+  },
+  {
+    "nvim-telescope/telescope-project.nvim",
+  },
 }
