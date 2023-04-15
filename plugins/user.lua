@@ -60,6 +60,10 @@ return {
     "ggandor/leap.nvim",
     dependencies = { "tpope/vim-repeat" },
     event = { "BufRead" },
-    config = function() require("leap").add_default_mappings(true) end,
+    config = function()
+      local leap = require "leap"
+      leap.opts.highlight_unlabeled_phase_one_targets = true
+      leap.add_default_mappings(true)
+    end,
   },
 }
