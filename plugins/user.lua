@@ -66,4 +66,10 @@ return {
       leap.add_default_mappings(true)
     end,
   },
+  {
+    "ggandor/flit.nvim",
+    dependencies = { "ggandor/leap.nvim" },
+    event = { "BufRead" },
+    config = function() require("flit").setup {} end,
+  },
 }
