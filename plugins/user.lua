@@ -50,6 +50,7 @@ return {
       "ray-x/guihua.lua",
       "neovim/nvim-lspconfig",
       "nvim-treesitter/nvim-treesitter",
+      "thehamsta/nvim-dap-virtual-text",
     },
     config = function() require("go").setup() end,
     event = { "CmdlineEnter" },
@@ -81,5 +82,9 @@ return {
     "echasnovski/mini.move",
     event = "VeryLazy",
     config = function() require("mini.move").setup() end,
+  },
+  {
+    "thehamsta/nvim-dap-virtual-text",
+    config = function() require("nvim-dap-virtual-text").setup() end,
   },
 }
