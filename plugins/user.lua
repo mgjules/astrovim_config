@@ -84,6 +84,12 @@ return {
     config = function() require("mini.move").setup() end,
   },
   {
+    "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    event = "VeryLazy",
+    config = function() require("todo-comments").setup {} end,
+  },
+  {
     "thehamsta/nvim-dap-virtual-text",
     config = function() require("nvim-dap-virtual-text").setup() end,
   },
