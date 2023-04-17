@@ -11,6 +11,8 @@ return {
       opts.default_component_configs.indent.padding = 1
       opts.window.position = "right"
       opts.window.width = 50
+      opts.window.auto_expand_width = true
+      opts.filesystem.filtered_items = { visible = true }
       return opts
     end,
   },
