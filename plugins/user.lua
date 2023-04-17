@@ -31,9 +31,7 @@ return {
   {
     "iamcco/markdown-preview.nvim",
     event = "VeryLazy",
-    init = function()
-      vim.fn(function() vim.fn["mkdp#util#install"]() end, 0)
-    end,
+    build = function() vim.fn["mkdp#util#install"]() end,
   },
   {
     "nvim-tree/nvim-web-devicons",
