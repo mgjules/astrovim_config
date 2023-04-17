@@ -72,4 +72,14 @@ return {
     event = { "BufRead" },
     config = function() require("flit").setup {} end,
   },
+  {
+    "ray-x/lsp_signature.nvim",
+    config = function() require("lsp_signature").setup() end,
+    init = function() require("lsp_signature").on_attach() end,
+  },
+  {
+    "echasnovski/mini.move",
+    event = "VeryLazy",
+    config = function() require("mini.move").setup() end,
+  },
 }
